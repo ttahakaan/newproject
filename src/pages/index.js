@@ -14,7 +14,7 @@ export default function YeniProject() {
           How To Make You Own Kalimba Arrangement?
         </a>
         <a className="bg-sky-400 p-4 mt-2 items-center flex justify-center border border-gray-400 rounded-full text-white font-bold" href="/how-to-fix-buzzing-kalimba-tines">
-          How To Fix Buzzing Kalimba Tines
+          How To Fix Buzzing Kalimba Tiness
         </a>
       </div>
     </div>
