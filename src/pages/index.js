@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function YeniProject() {
   return (
     <div className="bg-sky-100 h-screen overflow-scroll">
-      <div className="bg-sky-400 h-16 text-white items-center flex justify-center text-lg rounded-b-md">Welcome!</div>
       <div class="grid grid-rows-2 grid-cols-2 h-screen p-4">
         <Link className="bg-sky-400 mr-2 p-4 items-center flex justify-center border border-gray-400 rounded-full text-white font-bold" href="/how-to-take-care-of-your-kalimba">
           How to take care of your Kalimba?
