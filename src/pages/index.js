@@ -1,4 +1,3 @@
-import { FaSnapchatGhost, FaSpotify, FaStudiovinari, FaTwitter, FaInstagram, FaFacebook, FaSteam } from "react-icons/fa";
 export default function YeniProject() {
   return (
     <div className="bg-sky-100 h-screen overflow-scroll">
