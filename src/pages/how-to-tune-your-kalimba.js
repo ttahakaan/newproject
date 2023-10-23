@@ -1,6 +1,34 @@
+import { useState, useEffect } from "react";
+import { BsArrowUpShort } from "react-icons/bs";
+
 export default function HowHoTuneYourKalimba() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        // Örneğin, 100 piksel aşağı kaydırıldığında butonu göster
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className=" bg-white">
+    <div className=" bg-sky-100">
       <div className="bg-sky-400 h-16 text-white items-center flex justify-center text-lg rounded-b-md">How to Tune Your Kalimba?</div>
       {/* <div className="bg-white p-4">
           <h2 className="container mx-auto text-black">Have you heard your Kalimba suddenly buzzing on some of its key? Have you wondered how to fix it? Or you are now looking for the solution to fix your buzzing Kalimba? We are here to help you and give some tips that might have a higher chance of fixing it.</h2>
@@ -34,13 +62,12 @@ export default function HowHoTuneYourKalimba() {
           <div className="bg-gray-50 mt-3 rounded-md p-3 card-css">
             <h2 className="container mx-auto text-gray-700">Now, we have everything we need, let us start to tune our Kalimba. Get your Kalimba and place your mobile phone near to your kalimba. And then locate which tines you will tune. For our example, let us choose A4 or 6 in notation. We only have two things we can do to change the tune. First is hitting the tines from above will lower the tunes and second is hitting the tunes from below will make the sounds higher. Be careful when hitting the tines not to hit other nearby tines. Hit just one or two times then pluck the tines your are tuning. The tuner on your mobile phone will start moving up or down while showing the tone it recognize.</h2>
             <div className="items-center flex justify-center mt-4">
-          <img className="rounded-md" src="https://i.ibb.co/RcQr9M9/Da-Tuner-Before-259x420.png" alt="Kalimba Fix on Buzzing Tines" />
-        </div>
-        <h1 className="items-center flex justify-center text-gray-700">DaTuner Kalimba Tabs</h1>
+              <img className="rounded-md" src="https://i.ibb.co/RcQr9M9/Da-Tuner-Before-259x420.png" alt="Kalimba Fix on Buzzing Tines" />
+            </div>
+            <h1 className="items-center flex justify-center text-gray-700">DaTuner Kalimba Tabs</h1>
           </div>
-          
         </div>
-       
+
         <div className="p-3">
           <div className="bg-gray-50 mt-3 rounded-md p-3 card-css">
             <h1 className="container mx-auto text-gray-700 font-bold text-3xl mb-2">HOW TO USE THE DaTuner</h1>
@@ -61,6 +88,15 @@ export default function HowHoTuneYourKalimba() {
         </div>
       </div>
       <footer className="bg-sky-400 h-12 text-white items-center flex justify-center">Kalimba Tabs</footer>
+      <div
+        className={`fixed bottom-8 right-8 bg-sky-400 text-white p-2 flex items-center justify-center rounded-full shadow cursor-pointer transition-opacity duration-500 ${showScrollButton ? "opacity-100" : "opacity-0"}`}
+        onClick={() => {
+          scrollToTop();
+        }}
+      >
+        Back To Top
+        <BsArrowUpShort size={30} /> {/* İkon boyutunu 30 olarak bıraktık */}
+      </div>
     </div>
   );
 }

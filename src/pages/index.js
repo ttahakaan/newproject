@@ -1,23 +1,21 @@
-import { FaSnapchatGhost,FaSpotify,FaStudiovinari,FaTwitter,FaInstagram, FaFacebook, FaSteam } from "react-icons/fa";
+import { FaSnapchatGhost, FaSpotify, FaStudiovinari, FaTwitter, FaInstagram, FaFacebook, FaSteam } from "react-icons/fa";
 export default function YeniProject() {
   return (
-    <div className="h-screen bg-sky-100">
-      <div className="bg-sky-200">
-        <div className="bg-sky-500 container mx-auto h-12 items-center text-xl justify-center flex">
-          <h1 className="text-white ">Header</h1>
-        </div>
-      </div>
-      <div className="bg-white h-3">
-       
-      </div>
-      <div className="bg-sky-600 h-12 justify-between flex">
-        <div className="bg-sky-200 w-full items-center text-3xl justify-center flex text-white "><FaSnapchatGhost/></div>
-        <div className="bg-sky-300 w-full items-center text-3xl justify-center flex text-white "><FaSpotify/></div>
-        <div className="bg-sky-400 w-full items-center text-3xl justify-center flex text-white "><FaStudiovinari/></div>
-        <div className="bg-sky-600 w-full items-center text-3xl justify-center flex text-white "><FaTwitter/></div>
-        <div className="bg-sky-400 w-full items-center text-3xl justify-center flex text-white "><FaInstagram/></div>
-        <div className="bg-sky-300 w-full items-center text-3xl justify-center flex text-white "><FaFacebook/></div>
-        <div className="bg-sky-200 w-full items-center text-3xl justify-center flex text-white "><FaSteam/></div>
+    <div className="bg-sky-100 h-screen overflow-scroll">
+      <div className="bg-sky-400 h-16 text-white items-center flex justify-center text-lg rounded-b-md">Welcome!</div>
+      <div class="grid grid-rows-2 grid-cols-2 h-screen p-4">
+        <a className="bg-sky-400 mr-2 p-4 items-center flex justify-center border border-gray-400 rounded-full text-white font-bold" href="/how-to-take-care-of-your-kalimba">
+          How to take care of your Kalimba?
+        </a>
+        <a className="bg-sky-400 p-4 items-center flex justify-center border border-gray-400 rounded-full text-white font-bold" href="/how-to-tune-your-kalimba">
+          How to Tune Your Kalimba?
+        </a>
+        <a className="bg-sky-400 mr-2 mt-2 p-4 items-center flex justify-center border border-gray-400 rounded-full text-white font-bold " href="/how-to-make-your-own-kalimba-arrangement">
+          How To Make You Own Kalimba Arrangement?
+        </a>
+        <a className="bg-sky-400 p-4 mt-2 items-center flex justify-center border border-gray-400 rounded-full text-white font-bold" href="/how-to-fix-buzzing-kalimba-tines">
+          How To Fix Buzzing Kalimba Tines
+        </a>
       </div>
     </div>
   );
