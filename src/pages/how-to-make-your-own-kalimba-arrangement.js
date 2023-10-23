@@ -51,7 +51,7 @@ export default function HowToMakeYouOwnKalimbaArrangement() {
             <h1 className="container mx-auto text-gray-700 font-bold text-2xl mb-2 mt-4">Piano Keys and Kalimba Tines</h1>
             <h2 className="container mx-auto text-gray-700">International standard C Major Kalimba tuned consist of 2 full octaves and another 3 notes on the next octave. Which these octaves can be directly plotted against the octaves of piano keys. So it means, when you press the C4 in piano key and C4 in Kalimba tines they would sound the same. Take note that we are taking about single key in piano here not the chords (multiple keys) that we will tackle later. Let us also tackle the white keys only as the black keys (accidental) are a little more advance, but we will discuss them as well a little.</h2>
             <div className="items-center flex justify-center mt-4">
-              <img className="rounded-md" src="https://i.ibb.co/hDxS3Jg/piano.jpg" alt="Kalimba Fix on Buzzing Tines" />
+              <img className="rounded-md" src="https://i.ibb.co/hDxS3Jg/piano.jpg" alt="Piano Keys and Thumb Piano Keys" />
             </div>
             <h1 className="items-center flex justify-center ">Piano Keys and Thumb Piano Keys</h1>
           </div>
